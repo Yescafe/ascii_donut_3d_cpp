@@ -13,13 +13,6 @@ namespace Donut {
 
 class Canvas {
 public:
-    Canvas() {
-        // hide terminal cursor
-        ::std::cout << "\x1b[?25l" << ::std::endl;
-
-        clear();
-    }
-
     explicit Canvas(Uint width, Uint height) : Canvas() {
         this->m_uWidth = width;
         this->m_uHeight = height;
@@ -28,6 +21,14 @@ public:
     ~Canvas() {
         // show terminal cursor
         ::std::cout << "\x1b[?25h" << ::std::endl;
+    }
+
+private:
+    Canvas() {
+        // hide terminal cursor
+        ::std::cout << "\x1b[?25l" << ::std::endl;
+
+        clear();
     }
 
 public:
