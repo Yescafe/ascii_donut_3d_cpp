@@ -7,7 +7,6 @@
 namespace Donut {
 
 Buffer2D Donut::getFront() {
-    ::std::vector<::std::vector<Int>> zbuf(this->m_uHeight, ::std::vector<Int>(this->m_uWidth, -123));
     Buffer2D output(this->m_uHeight, ::std::vector<char>(this->m_uWidth, '\0'));
     Float theta { 0 };
 
