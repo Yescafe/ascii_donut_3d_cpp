@@ -8,7 +8,7 @@
 namespace Donut {
 
 static void putchar(char ch) {
-    ::std::cout << ch << ' ' << ::std::endl;
+    ::std::cout << ch << ' ';
 }
 
 void Canvas::draw(const Buffer2D& b2d) {
