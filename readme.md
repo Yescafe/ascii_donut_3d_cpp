@@ -8,10 +8,8 @@ $$
 \cos(\psi) & 0 & \sin(\psi)\\
 0 & 1 & 0\\
 -\sin(\psi) & 0 & \cos(\psi)
-\end{bmatrix}
- = 
+\end{bmatrix} =
 (r_1\cos(\psi)+r_2\cos(\theta)\cos(\psi), r_2\sin(\theta), -r_1\sin(\psi) - r_2\cos(\theta)\sin(\psi))
-
 $$
 
 Get `x` and `z` as `x` and `y`, they are defined in the inner loop:
