@@ -32,11 +32,11 @@ private:
     }
 
 public:
-    Uint getMUWidth() const {
+    Uint getWidth() const {
         return m_uWidth;
     }
 
-    Uint getMUHeight() const {
+    Uint getHeight() const {
         return m_uHeight;
     }
 
