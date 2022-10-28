@@ -9,6 +9,7 @@
 #include <array>
 #include <cfloat>
 #include <cmath>
+#include <string_view>
 
 namespace Donut {
 
@@ -21,6 +22,9 @@ using Float = double;
 using FVec3 = ::std::array<Float, 3>;
 
 const Float TAU = ::std::asin(1.0) * 4;
+
+using namespace ::std::string_view_literals;
+const ::std::string_view LUMI { ".,-~:;=!*#$@"sv };
 
 }  // end of namespace Donut
 

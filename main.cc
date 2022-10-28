@@ -24,20 +24,20 @@ int main(int argc, char* argv[]) {
     Donut::Canvas main_canvas(width, height);
     Donut::Donut donut(10, 5, 15, 25, main_canvas);
 
-    main_canvas.draw(donut.getFront());
+//    main_canvas.draw(donut.getFront());
 
-    /*
     // timer starts
     auto start_time { ::std::chrono::high_resolution_clock::now() };
 
     for (;;) {
         ::std::this_thread::sleep_for(::std::chrono::milliseconds(1000 / FPS));
 
+        main_canvas.draw(donut.getNextFrameXYRotation());
+
         if (::std::chrono::duration_cast<::std::chrono::milliseconds>(::std::chrono::high_resolution_clock::now() - start_time).count() >= lasting) {
             break;
         }
     }
-     */
 
     return 0;
 }

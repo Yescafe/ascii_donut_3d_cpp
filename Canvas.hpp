@@ -28,7 +28,7 @@ private:
         // hide terminal cursor
         ::std::cout << "\x1b[?25l" << ::std::endl;
 
-        clear();
+        this->clear();
     }
 
 public:
